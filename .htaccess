@@ -4,9 +4,7 @@ RewriteBase /
 RewriteRule ^index\.php$ - [L]
 
 # This is the rule that was not working: 
-RewriteRule ^wp-content/uploads/(.*) 
-http://milkthesun.blog.de.s3.amazonaws.com/wp-content/uploads/$1 
-[R=301,NC,L]
+RewriteRule ^wp-content/uploads/(.*) http://milkthesun.blog.de.s3.amazonaws.com/wp-content/uploads/$1 [R=301,NC,L]
 
 RewriteCond %{REQUEST_FILENAME} !-f 
 RewriteCond %{REQUEST_FILENAME} !-d 
