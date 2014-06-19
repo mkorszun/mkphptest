@@ -8,7 +8,7 @@ RewriteRule ^wp-content/uploads/(.*) http://milkthesun.blog.de.s3.amazonaws.com/
 
 RewriteCond %{REQUEST_FILENAME} !-f 
 RewriteCond %{REQUEST_FILENAME} !-d 
-RewriteRule . /index.php [L] 
+RewriteRule . /putzhilfe [L] 
 </IfModule> 
 # END WordPress 
 # Cure broken FontAwesome links for FF, IE and Safari 
