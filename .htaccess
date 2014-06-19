@@ -1,17 +1,4 @@
 <IfModule mod_rewrite.c> 
 RewriteEngine On 
-RewriteBase / 
-RewriteRule ^index\.php$ - [L]
-
-# This is the rule that was not working: 
-RewriteRule ^wp-content/uploads/(.*) http://milkthesun.blog.de.s3.amazonaws.com/wp-content/uploads/$1 [R=301,NC,L]
-
-RewriteCond %{REQUEST_FILENAME} !-f 
-RewriteCond %{REQUEST_FILENAME} !-d 
-RewriteRule . /putzhilfe [L] 
-</IfModule> 
-# END WordPress 
-# Cure broken FontAwesome links for FF, IE and Safari 
-<FilesMatch ".(ttf|otf|eot|woff)"> 
-Header set Access-Control-Allow-Origin "*" 
+RewriteRule ^$ /putzhilfe [L]
 </FilesMatch>
